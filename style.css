@@ -76,6 +76,49 @@ p {
   box-shadow: 0 0 15px rgba(108, 99, 255, 0.6);
 }
 
+/* APOD SECTION */
+
+#apod {
+  background: radial-gradient(ellipse at bottom, #0b0d22 0%, #000 100%);
+  text-align: center;
+}
+
+.apod-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  padding: 0 1rem;
+}
+
+.apod-grid img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: all 0.4s ease;
+}
+
+.apod-grid img:hover {
+  transform: scale(1.02);
+}
+
+.apod-info {
+  text-align: left;
+}
+
+.apod-info p {
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .apod-grid {
+    grid-template-columns: 1fr;
+  }
+  .apod-info {
+    text-align: center;
+  }
+}
+
 /* GALLERY SECTION */
 
 #gallery {

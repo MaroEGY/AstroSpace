@@ -13,6 +13,26 @@ VANTA.GLOBE({
   backgroundColor: 0x0b0e16,
 });
 
+// APOD Logic //
+const apodImg = document.querySelector("#apod-img");
+const apodTitle = document.querySelector("#apod-title");
+const apodDate = document.querySelector("#apod-date");
+const apodDesc = document.querySelector("#apod-desc");
+
+fetch(
+  "https://api.nasa.gov/planetary/apod?api_key=5Ntg5LnyBOIN4wSv1xfmkAG6ZI0Z29PPeI4ivq81"
+)
+  .then((res) => res.json())
+  .then((data) => {
+    apodImg.src = data.url;
+    apodTitle.textContent = data.title;
+    apodDate.textContent = data.date;
+    apodDesc.textContent = data.explanation;
+  })
+  .catch(() => {
+    apodTitle.textContent = "Error loading image.";
+  });
+
 // Handling form input //
 
 const form = document.querySelector("#subscribe-form");
