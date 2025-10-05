@@ -1,3 +1,4 @@
+// Globe Effect //
 VANTA.GLOBE({
   el: "#hero",
   mouseControls: true,
@@ -10,4 +11,15 @@ VANTA.GLOBE({
   color: 0x6c63ff,
   color2: 0x00fff5,
   backgroundColor: 0x0b0e16,
+});
+
+// Handling form input //
+
+const form = document.querySelector("#subscribe-form");
+const message = document.querySelector("#form-message");
+
+form.addEventListener("submit", (element) => {
+  element.preventDefault();
+  message.textContent = "Thank you for joining the mission! 🌌";
+  setTimeout(() => (message.textContent = ""), 4000);
 });
