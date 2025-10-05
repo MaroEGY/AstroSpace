@@ -1,6 +1,13 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
 body {
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 section {
@@ -9,6 +16,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
 }
 
 .hero-content {
@@ -27,7 +35,7 @@ section {
 }
 
 .hero-content h1 {
-  font-size: clamp(1rem, 8vw, 3rem);
+  font-size: clamp(1rem, 9vw, 2.5rem);
   background: linear-gradient(90deg, #00fff5, #6c63ff);
   background-clip: text;
   color: transparent;
@@ -35,7 +43,7 @@ section {
 }
 
 .hero-content p {
-  font-size: clamp(0.8rem, 3vw, 1rem);
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
   color: white;
 }
 
@@ -44,12 +52,13 @@ section {
   border: none;
   text-decoration: none;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 0.97rem;
   transition: all 0.3s ease;
 }
 
 .hero-content a:hover {
+  translate: 0 -5px;
   box-shadow: 0 0 15px rgba(108, 99, 255, 0.6);
 }
