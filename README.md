@@ -3,7 +3,7 @@
 _A celestial journey through the cosmos, built for the NASA Space Apps Challenge_
 
 [![NASA Space Apps](https://img.shields.io/badge/NASA-Space%20Apps-blue.svg)](https://www.spaceappschallenge.org/)
-[![Embiggen Ur Eyes Challenge](https://img.shields.io/badge/Challenge-Embiggen%20Ur%20Eyes-orange.svg)](https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/)
+[![Embiggen Your Eyes Challenge](https://img.shields.io/badge/Challenge-Embiggen%20Ur%20Eyes-orange.svg)](https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
@@ -42,13 +42,13 @@ Experience the cosmos through interactive visualizations, real-time NASA data, a
 
 - Direct links to NASA STEM resources
 - Access to NASA's open APIs for developers
-- Citizen science participation opportunities
+- The official NASA website for more information
 - Newsletter subscription for space updates
 
 ## 🛠️ Technologies Used
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Visual Effects**: Three.js, Vanta.js, Particles.js
+- **Visual Effects**: Three.js, Vanta.js
 - **Data Source**: NASA Astronomy Picture of the Day API
 - **Hosting**: Static file deployment ready
 - **Icons**: Custom favicon set for all devices
@@ -66,7 +66,7 @@ This project directly addresses the **"Embiggen Your Eyes"** challenge by:
 ## 🚀 Quick Start
 
 1. **Clone or download** the project files
-2. **Open `home.html`** in your web browser
+2. **Open `index.html`** in your web browser
 3. **Experience the cosmos** - no additional setup required!
 
 The project runs entirely client-side and requires no server configuration.
@@ -74,7 +74,7 @@ The project runs entirely client-side and requires no server configuration.
 ## 📁 Project Structure
 
 AstroSpace/
-├── home.html # Main HTML file
+├── index.html # Main HTML file
 ├── style.css # All styling and responsive design
 ├── script.js # Interactive functionality and API calls
 ├── assets/ # Favicons and web manifest
@@ -113,7 +113,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - [NASA Space Apps Challenge](https://www.spaceappschallenge.org/)
 - [NASA APOD API](https://api.nasa.gov/)
 - [NASA STEM Engagement](https://www.nasa.gov/stem)
-- [NASA Citizen Science](https://science.nasa.gov/citizenscience)
+- [NASA Official Website](https://www.nasa.gov)
 
 ---
 

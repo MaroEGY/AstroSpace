@@ -89,10 +89,10 @@
       <section id="join">
         <div class="join-wrapper">
           <article class="join-text">
-            <h1>Join the Mission</h1>
+            <h1>Join the Mission With NASA!</h1>
             <p>
               Space exploration needs dreamers, coders, designers, and thinkers.
-              Whether you're a student, developer, or explorer — you can help
+              Whether you're a student, developer, or explorer you can help
               expand humanity's reach into the stars.
             </p>
             <a href="https://www.nasa.gov/stem" target="_blank"
@@ -101,17 +101,27 @@
             <a href="https://api.nasa.gov" target="_blank"
               >🛰️ Use NASA Open APIs</a
             >
-            <a
-              href="https://science.nasa.gov/get-involved/citizenscience/"
-              target="_blank"
-              >🔭 Join Citizen Science</a
+            <a href="https://www.nasa.gov" target="_blank"
+              >🔭 NASA Official Website</a
             >
           </article>
 
           <article class="join-form">
             <h2>Subscribe for Space Updates</h2>
             <form id="subscribe-form">
-              <input type="email" placeholder="Enter your email" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="example123@gmail.com"
+                required
+              />
+              <input type="hidden" name="site_name" value="AstroSpace" />
               <button type="submit">Join Now</button>
             </form>
             <p id="form-message"></p>
@@ -122,7 +132,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

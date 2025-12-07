@@ -34,12 +34,25 @@ fetch(
   });
 
 // Handling form input //
-
 const form = document.querySelector("#subscribe-form");
 const message = document.querySelector("#form-message");
 
-form.addEventListener("submit", (element) => {
-  element.preventDefault();
-  message.textContent = "Thank you for joining the mission! 🌌";
-  setTimeout(() => (message.textContent = ""), 4000);
+(function () {
+  emailjs.init("J06XjHoRjNs4yil-h");
+})();
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  message.textContent = "Sending...";
+
+  emailjs
+    .sendForm("Space-Updates", "template_xucdsqk", this)
+    .then(() => {
+      message.textContent = "You're subscribed! Check your email. ✅";
+      this.reset();
+    })
+    .catch((error) => {
+      message.textContent = "Signup failed, Try again later. ❌";
+      console.error("EmailJS Error:", error);
+    });
 });
