@@ -86,6 +86,10 @@ p {
   justify-content: flex-start;
 }
 
+#apod h1 {
+  margin-top: 3rem;
+}
+
 .apod-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -120,6 +124,9 @@ p {
   }
   .apod-info {
     text-align: center;
+  }
+  #apod h1 {
+    margin-top: 0;
   }
 }
 
